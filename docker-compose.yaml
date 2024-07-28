@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    volumes:
+      - "${HOME}/database:/database"
+    environment:
+      - DATABASE_PATH=${HOME}/database/database.aka
+    ports:
+      - "9900:8080"

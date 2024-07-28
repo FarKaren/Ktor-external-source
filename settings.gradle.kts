@@ -1,1 +1,1 @@
-rootProject.name = "com.karen.ktor-external-source"
+rootProject.name = "ktor-external-source"
