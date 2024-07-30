@@ -3,8 +3,8 @@ services:
   app:
     build: .
     volumes:
-      - "${HOME}/database:/database"
+      - path/to/database.aka:/database/database.aka
     environment:
-      - DATABASE_PATH=${HOME}/database/database.aka
+      - DATABASE_PATH=/database/database.aka
     ports:
       - "9900:8080"
